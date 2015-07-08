@@ -40,6 +40,7 @@ angular.module('skyfly33App')
         Kakao.Auth.setRefreshToken(authObj.refresh_token, true);
         console.log("refresh_token : " + authObj.refresh_token);
 
+        $window.location.href = '/' ;
         alert("로그인에 성공 하였습니다!");
       },
       fail: function(err) {
