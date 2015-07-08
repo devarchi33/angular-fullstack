@@ -27,7 +27,6 @@ angular.module('skyfly33App')
     $window.location.href = '/auth/' + provider;
   };
 
-  Kakao.init('db831e72d4093199ddd7954e27a2f91b');
   $scope.loginKakao = function() {
     console.log('kakao login button click');
     Kakao.Auth.login({
